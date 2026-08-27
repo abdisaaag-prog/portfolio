@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdisa Abdella — Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#intro">AA</a>
+      <ul class="nav-links">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li class="nav-dropdown-wrap">
+          <a href="#projects" class="nav-dropdown-trigger">Projects <span class="nav-caret">▾</span></a>
+          <ul class="nav-dropdown">
+            <li><a href="#projects">Wind Turbine</a></li>
+            <li><a href="#experience">City of Calgary</a></li>
+            <li><a href="#knee-brace">Knee Brace</a></li>
+            <li><a href="#robot">Autonomous Robot</a></li>
+            <li><a href="#garden">Garden System</a></li>
+            <li><a href="#golf">Golf Club</a></li>
+          </ul>
+        </li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-mobile" id="navMobile">
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li class="nav-mobile-label">Projects</li>
+      <li class="nav-mobile-sub"><a href="#projects">↳ Wind Turbine</a></li>
+      <li class="nav-mobile-sub"><a href="#experience">↳ City of Calgary</a></li>
+      <li class="nav-mobile-sub"><a href="#knee-brace">↳ Knee Brace</a></li>
+      <li class="nav-mobile-sub"><a href="#robot">↳ Autonomous Robot</a></li>
+      <li class="nav-mobile-sub"><a href="#garden">↳ Garden System</a></li>
+      <li class="nav-mobile-sub"><a href="#golf">↳ Golf Club</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- SIDE PROGRESS INDICATOR -->
+  <aside id="progress-indicator" aria-hidden="true">
+    <div class="progress-track">
+      <div class="progress-item" data-section="intro"><span class="prog-label">Intro</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="skills"><span class="prog-label">Skills</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="projects"><span class="prog-label">Wind Turbine</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="experience"><span class="prog-label">Internship</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="knee-brace"><span class="prog-label">Knee Brace</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="robot"><span class="prog-label">Robot</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="garden"><span class="prog-label">Garden</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="golf"><span class="prog-label">Golf Club</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="goals"><span class="prog-label">Goals</span><span class="prog-dot"></span></div>
+      <div class="progress-item" data-section="contact"><span class="prog-label">Contact</span><span class="prog-dot"></span></div>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ================================================
+         INTRO
+    ================================================ -->
+    <section id="intro" class="level level-intro">
+      <div class="intro-inner">
+        <div class="intro-tag reveal">Mechanical Engineering Portfolio</div>
+        <h1 class="intro-name reveal">Abdisa Abdella</h1>
+        <p class="intro-role reveal">
+          Mechanical Engineering Student &nbsp;·&nbsp; Economics Minor<br/>
+          Schulich School of Engineering, University of Calgary
+        </p>
+        <p class="intro-bio reveal">
+          I'm a mechanical engineering student with hands-on experience in design,
+          research, and municipal infrastructure. My resume covers the professional side —
+          this portfolio is where I show the work: the projects I've designed, built, tested,
+          and iterated on outside of what fits on a single page.
+        </p>
+        <div class="intro-actions reveal">
+          <!-- Replace # with your resume PDF path e.g. assets/resume.pdf -->
+          <a href="#" class="btn btn-primary" target="_blank">Resume</a>
+          <!-- Replace # with your LinkedIn URL -->
+          <a href="#" class="btn btn-outline" target="_blank">LinkedIn</a>
+          <a href="mailto:abdisa.aag@gmail.com" class="btn btn-outline">Email</a>
+        </div>
+        <div class="intro-scroll-hint reveal">
+          <span>Scroll to explore</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+      <div class="intro-grid-bg" aria-hidden="true"></div>
+    </section>
+
+
+    <!-- ================================================
+         SKILLS & TOOLS
+    ================================================ -->
+    <section id="skills" class="level level-skills level-alt">
+      <div class="level-inner">
+        <div class="section-header reveal">
+          <div class="level-eyebrow">Capabilities</div>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-category">
+            <h3 class="skill-cat-label">Design &amp; CAD</h3>
+            <ul>
+              <li>SolidWorks</li>
+              <li>Fusion 360</li>
+              <li>AutoCAD</li>
+              <li>Revit</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-label">Programming &amp; Analysis</h3>
+            <ul>
+              <li>MATLAB</li>
+              <li>Python</li>
+              <li>Excel</li>
+              <li>PowerBI</li>
+              <li>Bluebeam</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-label">Manufacturing</h3>
+            <ul>
+              <li>FDM 3D Printing</li>
+              <li>PrusaSlicer</li>
+              <li>Waterjet Cutting</li>
+              <li>Lathe &amp; Mill</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-label">Engineering Areas</h3>
+            <ul>
+              <li>Mechanical Design</li>
+              <li>Thermodynamics</li>
+              <li>Municipal Infrastructure</li>
+              <li>Structural Drawing Review</li>
+              <li>Materials &amp; Rheology</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-label">Professional</h3>
+            <ul>
+              <li>Technical Writing</li>
+              <li>Team Collaboration</li>
+              <li>Research Methods</li>
+              <li>Public Speaking</li>
+              <li>Documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+         PROJECT 1 — WIND TURBINE
+    ================================================ -->
+    <section id="projects" class="level level-project">
+      <div class="level-inner">
+        <div class="compact-project reveal">
+          <div class="compact-text">
+            <div class="level-eyebrow">Thermodynamics Competition</div>
+            <h2 class="project-title">Wind Turbine<br/>Design &amp; Fabrication</h2>
+            <p class="project-subtitle">Schulich School of Engineering &nbsp;|&nbsp; University of Calgary</p>
+            <div class="tag-row">
+              <span class="tag">SolidWorks</span>
+              <span class="tag">3D Printing</span>
+              <span class="tag">PrusaSlicer</span>
+              <span class="tag">Thermodynamics</span>
+              <span class="tag">Experimental Design</span>
+            </div>
+            <div class="project-stat-inline">
+              <span class="stat-number">1st</span>
+              <span class="stat-label">of 200 students</span>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Objective</h3>
+              <ul class="bullet-list">
+                <li>Design, fabricate, and test a miniature wind turbine to maximize electrical output</li>
+                <li>Optimize blade geometry, count, and shroud design within a limited time and material budget</li>
+                <li>Perform thermodynamic analysis of power output, kinetic energy, and system efficiency</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Did</h3>
+              <ul class="bullet-list">
+                <li>Independently designed turbine blade geometry and shroud in SolidWorks</li>
+                <li>Iterated through multiple blade configurations to optimize performance</li>
+                <li>Sliced and 3D printed final design on a Prusa MK4S using PrusaSlicer</li>
+                <li>Conducted full thermodynamic performance analysis on test day</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Result</h3>
+              <ul class="bullet-list">
+                <!-- Add your measured output number here when you remember it -->
+                <li>Ranked 1st in a class of 200 — highest measured performance on test day</li>
+                <li>Developed intuition for blade geometry, tip speed ratio, and shroud effects on output</li>
+                <li>End-to-end experience from CAD concept to live physical test data</li>
+              </ul>
+            </div>
+          </div>
+          <div class="compact-images">
+            <!-- hero.jpg — your SolidWorks blade render -->
+            <figure class="img-hero">
+              <img src="assets/wind-turbine/hero.jpg" alt="Wind turbine SolidWorks render" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <figcaption>Final blade design — SolidWorks render</figcaption>
+            </figure>
+            <div class="img-grid-2">
+              <!-- detail-1.jpg — turbine shroud in PrusaSlicer -->
+              <figure class="img-support">
+                <img src="assets/wind-turbine/detail-1.jpg" alt="Turbine shroud in PrusaSlicer" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Shroud — PrusaSlicer</figcaption>
+              </figure>
+              <!-- detail-2.jpg — physical print on Prusa MK4S -->
+              <figure class="img-support">
+                <img src="assets/wind-turbine/detail-2.jpg" alt="3D printed turbine on Prusa MK4S" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Print — Prusa MK4S</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+         PROJECT 2 — CITY OF CALGARY INTERNSHIP
+    ================================================ -->
+    <section id="experience" class="level level-project level-alt">
+      <div class="level-inner">
+        <div class="compact-project reveal">
+          <div class="compact-text">
+            <div class="level-eyebrow">May – Aug 2026 &nbsp;·&nbsp; Professional Experience</div>
+            <h2 class="project-title">City of Calgary<br/>Building Permit Analyst</h2>
+            <p class="project-subtitle">Planning &amp; Development Services &nbsp;|&nbsp; City of Calgary</p>
+            <div class="tag-row">
+              <span class="tag">PowerBI</span>
+              <span class="tag">Excel</span>
+              <span class="tag">NBC</span>
+              <span class="tag">NECB</span>
+              <span class="tag">ASHRAE</span>
+              <span class="tag">NFPA</span>
+              <span class="tag">Bluebeam</span>
+            </div>
+            <div class="brief-stats">
+              <div class="brief-stat">
+                <span class="stat-number">835+</span>
+                <span class="stat-label">Permits reviewed</span>
+              </div>
+              <div class="brief-stat">
+                <span class="stat-number">$6K</span>
+                <span class="stat-label">Fees recovered</span>
+              </div>
+              <div class="brief-stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Disciplines shadowed</span>
+              </div>
+              <div class="brief-stat">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Codes applied</span>
+              </div>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Projects</h3>
+              <ul class="bullet-list">
+                <li>Backlog clearance — cleared 835+ residential improvement permits on hold since 2017 as part of a 2-person team</li>
+                <li>Redocumentation — organized and updated permit records using PowerBI and Excel, recovering ~$6,000 in outstanding fees</li>
+                <li>Applicant contact — communicated with homeowners and applicants to resolve deficiencies on building and mechanical permits</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Technical Exposure</h3>
+              <ul class="bullet-list">
+                <li>Reviewed mechanical, structural, and architectural drawings for NBC, NECB, ASHRAE, and NFPA compliance</li>
+                <li>Shadowed mechanical, structural, utility, mobility, and development engineering professionals</li>
+                <li>Hands-on exposure to HVAC, plumbing, exhaust systems, and high-profile building projects</li>
+              </ul>
+            </div>
+          </div>
+          <div class="compact-images">
+            <!-- hero.jpg — your main internship photo -->
+            <figure class="img-hero">
+              <img src="assets/city-calgary/hero.jpg" alt="City of Calgary internship" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <figcaption>City of Calgary — Planning &amp; Development Services</figcaption>
+            </figure>
+            <div class="img-grid-2">
+              <!-- detail-1.jpg — technical drawing review photo -->
+              <figure class="img-support">
+                <img src="assets/city-calgary/detail-1.jpg" alt="Technical drawing review" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Drawing review</figcaption>
+              </figure>
+              <!-- detail-2.jpg — inspection or site shadowing photo -->
+              <figure class="img-support">
+                <img src="assets/city-calgary/detail-2.jpg" alt="Engineering inspection shadowing" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Site inspection shadowing</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+         PROJECT 3 — TELESCOPIC KNEE BRACE
+    ================================================ -->
+    <section id="knee-brace" class="level level-project">
+      <div class="level-inner">
+        <div class="compact-project reveal">
+          <div class="compact-text">
+            <div class="level-eyebrow">Engineering Design Class</div>
+            <h2 class="project-title">Telescopic Adjustable<br/>Knee Brace</h2>
+            <p class="project-subtitle">Schulich School of Engineering &nbsp;|&nbsp; University of Calgary</p>
+            <div class="tag-row">
+              <span class="tag">SolidWorks</span>
+              <span class="tag">Assembly Modelling</span>
+              <span class="tag">Engineering Drawings</span>
+              <span class="tag">BOM &amp; Costing</span>
+              <span class="tag">DFM</span>
+            </div>
+            <div class="project-stat-row">
+              <div class="project-stat-inline">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Unique parts</span>
+              </div>
+              <div class="project-stat-inline">
+                <span class="stat-number">$730</span>
+                <span class="stat-label">vs $1,150 avg competitor</span>
+              </div>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Objective</h3>
+              <ul class="bullet-list">
+                <li>Redesign a standard knee brace with three integrated mechanical subsystems</li>
+                <li>Dial-based cable tensioning, lockable ROM hinge, and telescopic growth frame</li>
+                <li>Sustainable, lightweight, and cost-competitive using Aluminium 6061</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Did</h3>
+              <ul class="bullet-list">
+                <li>Modelled all 12 parts — telescopic sliders (150–300mm range), dial housing, spool, shaft, and ROM hinge pieces</li>
+                <li>Created full engineering drawings and a SolidWorks Costing bill of materials</li>
+                <li>Applied advanced mates, limit distance constraints, and exploded views throughout assembly</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Learned</h3>
+              <ul class="bullet-list">
+                <li>Balancing comfort, manufacturability, and cost across a multi-subsystem design</li>
+                <li>Produced a design competitive with commercial products at under two-thirds the price</li>
+                <li>Deepened SolidWorks assembly and formal engineering drawing skills</li>
+              </ul>
+            </div>
+          </div>
+          <div class="compact-images">
+            <!-- hero.jpg — image showing the bill of materials / costing sheet -->
+            <figure class="img-hero">
+              <img src="assets/knee-brace/hero.jpg" alt="Knee brace bill of materials" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <figcaption>Bill of materials &amp; SolidWorks costing breakdown</figcaption>
+            </figure>
+            <div class="img-grid-2">
+              <!-- detail-1.jpg — 3D render of the telescopic frame assembly -->
+              <figure class="img-support">
+                <img src="assets/knee-brace/detail-1.jpg" alt="Telescopic frame 3D render" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Telescopic growth frame — 3D render</figcaption>
+              </figure>
+              <!-- detail-2.jpg — full leg model with brace assembled -->
+              <figure class="img-support">
+                <img src="assets/knee-brace/detail-2.jpg" alt="Full leg model with brace" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Full leg model — brace in position</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+         PROJECT 4 — AUTONOMOUS DELIVERY ROBOT
+    ================================================ -->
+    <section id="robot" class="level level-project level-alt">
+      <div class="level-inner">
+        <div class="compact-project reveal">
+          <div class="compact-text">
+            <div class="level-eyebrow">Engineering Design Class</div>
+            <h2 class="project-title">Autonomous Delivery<br/>Robot</h2>
+            <p class="project-subtitle">Schulich School of Engineering &nbsp;|&nbsp; University of Calgary</p>
+            <div class="tag-row">
+              <span class="tag">Arduino</span>
+              <span class="tag">MicroPython</span>
+              <span class="tag">Ultrasonic Sensors</span>
+              <span class="tag">Motor Control</span>
+              <span class="tag">Prototyping</span>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Objective</h3>
+              <ul class="bullet-list">
+                <li>Design and build an autonomous vehicle that navigates a course without human input</li>
+                <li>Detect obstacles, follow a line, and complete a simulated delivery pick-up and drop-off</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Did</h3>
+              <ul class="bullet-list">
+                <li>Built and programmed line-following logic and ultrasonic obstacle detection</li>
+                <li>Designed and integrated dual motor control and a forklift-style payload mechanism</li>
+                <li>Iterated through multiple hardware and software configurations across build sessions</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Learned</h3>
+              <ul class="bullet-list">
+                <li>Hands-on mechatronics and hardware-software integration under real constraints</li>
+                <li>Sensor noise, motor torque behaviour, and the gap between simulation and physical results</li>
+                <li>Rapid iteration and troubleshooting within a team under time pressure</li>
+              </ul>
+            </div>
+          </div>
+          <div class="compact-images">
+            <!-- hero.jpg — photo of final robot (front view) -->
+            <figure class="img-hero">
+              <img src="assets/autonomous-vehicle/hero.jpg" alt="Autonomous delivery robot" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <figcaption>Completed robot — final build</figcaption>
+            </figure>
+            <div class="img-grid-2">
+              <!-- detail-1.jpg — another photo of the final robot -->
+              <figure class="img-support">
+                <img src="assets/autonomous-vehicle/detail-1.jpg" alt="Autonomous robot second angle" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Final robot — side profile</figcaption>
+              </figure>
+              <!-- detail-2.jpg — your design sketch / drawing of the car -->
+              <figure class="img-support">
+                <img src="assets/autonomous-vehicle/detail-2.jpg" alt="Robot design sketch" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Initial design sketch</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+         PROJECT 5 — AUTOMATED GARDEN SYSTEM
+    ================================================ -->
+    <section id="garden" class="level level-project">
+      <div class="level-inner">
+        <div class="compact-project reveal">
+          <div class="compact-text">
+            <div class="level-eyebrow">Engineering Design Class</div>
+            <h2 class="project-title">Automated Garden<br/>System</h2>
+            <p class="project-subtitle">Schulich School of Engineering &nbsp;|&nbsp; University of Calgary</p>
+            <div class="tag-row">
+              <span class="tag">Sensors</span>
+              <span class="tag">Pump System</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Sustainability</span>
+              <span class="tag">Project Management</span>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Objective</h3>
+              <ul class="bullet-list">
+                <li>Design a system that autonomously manages soil moisture and grow lighting</li>
+                <li>Meet overflow prevention requirements while minimizing total water consumption</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Did</h3>
+              <ul class="bullet-list">
+                <li>Integrated moisture sensors, automated water pump, reservoir, and grow lighting</li>
+                <li>Designed mechanical enclosure, wiring layout, and sensor-driven control logic</li>
+                <li>Engineered a closed-loop water economy — perforated drainage holes feed a recirculating reservoir, eliminating overflow waste entirely</li>
+                <li>Managed project timeline using Gantt charts and progress tracking documentation</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What Made It Different</h3>
+              <ul class="bullet-list">
+                <li>Most designs only prevented overflow — ours captured and reused it, creating a circular water economy within the unit</li>
+                <li>Small perforated holes channelled excess water back into the reservoir, cutting consumption beyond what the brief required</li>
+                <li>Sustainability built into the architecture, not bolted on as an afterthought</li>
+              </ul>
+            </div>
+          </div>
+          <div class="compact-images">
+            <!-- hero.jpg — late night study/build session photo -->
+            <figure class="img-hero">
+              <img src="assets/garden-system/hero.jpg" alt="Garden system late night build session" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <figcaption>Lots of Late Night Study Sessions</figcaption>
+            </figure>
+            <div class="img-grid-2">
+              <!-- detail-1.jpg — full 3D render of the garden system -->
+              <figure class="img-support">
+                <img src="assets/garden-system/detail-1.jpg" alt="Full 3D render of garden system" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Full 3D render — system assembly</figcaption>
+              </figure>
+              <!-- gantt.jpg — Gantt chart / project management screenshot -->
+              <figure class="img-support">
+                <img src="assets/garden-system/gantt.jpg" alt="Project Gantt chart and management documentation" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Gantt chart &amp; project tracking</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+    
+
+
+    <!-- ================================================
+         PROJECT 7 — GOLF CLUB
+    ================================================ -->
+    <section id="golf" class="level level-project">
+      <div class="level-inner">
+        <div class="compact-project reveal">
+          <div class="compact-text">
+            <div class="level-eyebrow">Engineering Design Class</div>
+            <h2 class="project-title">All-in-One Adjustable<br/>Golf Club</h2>
+            <p class="project-subtitle">Schulich School of Engineering &nbsp;|&nbsp; University of Calgary</p>
+            <div class="tag-row">
+              <span class="tag">SolidWorks</span>
+              <span class="tag">Product Design</span>
+              <span class="tag">Mechanisms</span>
+              <span class="tag">Prototyping</span>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">Objective</h3>
+              <ul class="bullet-list">
+                <li>Design an adjustable golf club replicating multiple club types in a single product</li>
+                <li>Allow head angle, loft, and grip changes without switching clubs</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Did</h3>
+              <ul class="bullet-list">
+                <li>Designed a hydraulic pin coupler mechanism enabling tool-free head angle adjustment</li>
+                <li>Modelled swappable club head attachments and an adjustable grip assembly in SolidWorks</li>
+                <li>Applied design constraints to ensure reliable and manufacturable assembly</li>
+              </ul>
+            </div>
+            <div class="text-block">
+              <h3 class="text-label">What I Learned</h3>
+              <ul class="bullet-list">
+                <li>Translating an informal concept into a fully-constrained, production-ready CAD model</li>
+                <li>Balancing mechanism complexity against ease of use and cost</li>
+                <li>User-centred design applied to a consumer mechanical product</li>
+              </ul>
+            </div>
+          </div>
+          <div class="compact-images">
+            <!-- hero.jpg — 3D render of the hydraulic pin coupler mechanism -->
+            <figure class="img-hero">
+              <img src="assets/golf-club/hero.jpg" alt="Hydraulic pin coupler mechanism render" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <figcaption>Hydraulic pin coupler — 3D render</figcaption>
+            </figure>
+            <div class="img-grid-2">
+              <!-- detail-1.jpg — swappable golf head render -->
+              <figure class="img-support">
+                <img src="assets/golf-club/detail-1.jpg" alt="Swappable golf club head" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Swappable club head attachment</figcaption>
+              </figure>
+              <!-- detail-2.jpg — full golf club assembly render -->
+              <figure class="img-support">
+                <img src="assets/golf-club/detail-2.jpg" alt="Full golf club assembly render" onerror="this.parentElement.classList.add('img-placeholder')" />
+                <figcaption>Full club assembly — SolidWorks render</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+         GOALS
+    ================================================ -->
+    <section id="goals" class="level level-goals level-alt">
+      <div class="level-inner">
+        <div class="section-header reveal">
+          <div class="level-eyebrow">Looking Ahead</div>
+          <h2 class="section-title">Goals</h2>
+        </div>
+        <p class="goals-text reveal">
+          I want to be the kind of engineer who leads from the front — someone who takes
+          ownership of hard problems, communicates with clarity and conviction, and builds
+          things that actually make a difference in people's lives.
+          My aim is to grow into a role where technical depth and the ability to inspire and
+          mobilize others go hand in hand, whether that's in research, industry, or public service.
+        </p>
+      </div>
+      <div class="level-divider"></div>
+    </section>
+
+
+    <!-- ================================================
+         CONTACT
+    ================================================ -->
+    <section id="contact" class="level level-contact">
+      <div class="level-inner">
+        <div class="section-header reveal">
+          <div class="level-eyebrow">Get in touch</div>
+          <h2 class="section-title contact-title">Let's Connect</h2>
+        </div>
+        <p class="contact-bio reveal">
+          Thanks for viewing my portfolio. I'm always open to learning opportunities,
+          engineering projects, and professional connections.
+        </p>
+        <footer class="site-footer reveal">
+          <p>Abdisa Abdella &nbsp;·&nbsp; Schulich School of Engineering, University of Calgary &nbsp;·&nbsp; 2026</p>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
